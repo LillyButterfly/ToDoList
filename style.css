@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  outline: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+  background: linear-gradient(
+    90deg,
+    rgba(65, 184, 131, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+  
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+h1{
+  color: #20B2AA;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+  
+
+.container{
+background-color: #FFFFFF ;
+width: 480px;
+border-radius: 5px;
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px 15px;
+}
+
+#botao-add{
+  background-color: #20B2AA;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 36px;
+  width: 95px;
+  font-size: 17px;
+  color:#FFFFFF;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#botao-add:hover{
+  opacity: 0.8;
+}
+
+#botao-add:active{
+  opacity: 0.6;
+}
+
+#input-principal{
+  width: 342px;
+  height: 38px;
+  border: 2px solid #c2c2c2;
+  border-radius: 5px;;
+  text-indent: 3%;
+}
+
+#tarefas{
+  margin-top: 25px;
+  list-style: none;
+  width: 100%;
+}
+
+.item-tarefa{
+  background: #F2F2F2;
+  box-shadow: 1px 4px 10px rgb(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  border-radius: 5px;
+  cursor:pointer;
+  margin: 40px 0 20px 0;
+
+}
+
+.nome-tarefa{
+  font-size: 15px;
+  color: #000000;
+}
+
+.btnconcluido{
+  cursor: pointer;
+  background-color: rgba(0, 212, 255, 1);
+  border: none;
+  border-radius: 3px;
+  height: 26px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.btnexcluir{
+  cursor: pointer;
+  background-color:rgba(0, 212, 255, 1);
+  border: none;
+  border-radius: 3px;
+  height: 26px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.item-tarefa:hover .btnexcluir{
+  opacity: 1;
+}
+
+.item-tarefa:hover .btnconcluido{
+  opacity: 1;
+}
+
+.concluido{
+  background-color: aquamarine;
+  text-decoration: line-through;
+}
